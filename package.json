@@ -1,0 +1,27 @@
+{
+  "name": "termspeak",
+  "version": "0.0.1",
+  "description": "Utilities that enable your Node program to speak to your terminal including coloring, formatting.",
+  "keywords": [
+    "cli",
+    "terminal"
+  ],
+  "author": {
+      "name" : "Abi Raja",
+      "email": "abii@stanford.edu",
+      "url": "http//abi.sh"
+  },
+  "licenses":     [{
+    "type":       "MIT"
+  }],
+  "dependencies": {},
+  "main": "./bin/lib",
+  "engines": {
+    "node": "0.4.x"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abi/termspeak"
+  }
+}
