@@ -4,7 +4,7 @@ Utilities that enable your Node program to speak to your terminal including colo
 
 ## Running
 
-`coffee -o bin/ -c ./lib/termspeak.coffee`
+`coffee -o lib/ -c ./src/termspeak.coffee`
 
 ## License
 

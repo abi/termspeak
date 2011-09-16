@@ -4,7 +4,8 @@
   "description": "Utilities that enable your Node program to speak to your terminal including coloring, formatting.",
   "keywords": [
     "cli",
-    "terminal"
+    "terminal",
+    "colors"
   ],
   "author": {
       "name" : "Abi Raja",
@@ -12,14 +13,24 @@
       "url": "http//abi.sh"
   },
   "licenses":     [{
-    "type":       "MIT"
+     "type":       "MIT"
   }],
-  "dependencies": {},
-  "main": "./bin/lib",
-  "engines": {
-    "node": "0.4.x"
+  "scripts": {
+      "prepublish": "coffee -o lib/ -c ./src/termspeak.coffee",
+      "test": "coffee examples/example.coffee"
   },
-  "devDependencies": {},
+  "dependencies": {},
+  "main": "./lib",
+  "engines": {
+    "node": ">=0.4.x"
+  },
+  "directories": {
+    "example" : "./examples",
+    "lib" : "./src"
+  },
+  "devDependencies": {
+      "coffee-script" : ""
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/abi/termspeak"

@@ -1,6 +1,3 @@
-# Understand the CommonJS module system
-# Have dependencies
-
 COLOR_CODES = 
     black:     30
     red:       31
@@ -13,8 +10,9 @@ COLOR_CODES =
     
 generateColorFns = (obj) ->
     for fn, ascii_seq of COLOR_CODES
-        code = colorCode[fn]
-        do (code) ->
+        code = COLOR_CODES[fn]
+        do (code, fn) ->
             obj[fn] = (str) -> "\033[" + code.toString() + "m"  + str + "\033[0m"
+            obj["p#{fn}"] = (str) -> console.log obj[fn] str
             
 generateColorFns exports
