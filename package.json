@@ -1,23 +1,21 @@
 {
   "name": "termspeak",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utilities that enable your Node program to speak to your terminal including coloring, formatting.",
   "keywords": [
     "cli",
     "terminal",
     "colors"
   ],
-  "author": {
-      "name" : "Abi Raja",
-      "email": "abii@stanford.edu",
-      "url": "http//abi.sh"
-  },
-  "licenses":     [{
-     "type":       "MIT"
-  }],
+  "author": "Abi Raja <abii@stanford.edu> (http//abi.sh)",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
   "scripts": {
-      "prepublish": "coffee -o lib/ -c ./src/termspeak.coffee",
-      "test": "coffee examples/example.coffee"
+    "prepublish": "coffee -o lib/ -c ./src/termspeak.coffee",
+    "test": "coffee examples/example.coffee"
   },
   "dependencies": {},
   "main": "./lib",
@@ -25,14 +23,14 @@
     "node": ">=0.4.x"
   },
   "directories": {
-    "example" : "./examples",
-    "lib" : "./src"
+    "example": "./examples",
+    "lib": "./src"
   },
   "devDependencies": {
-      "coffee-script" : ""
+    "coffee-script": ""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abi/termspeak"
+    "url": "git://github.com/abi/termspeak.git"
   }
 }
