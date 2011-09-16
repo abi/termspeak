@@ -1,1 +1,5 @@
+# Remnants when using npm
 npm-debug.log
+
+# Remnants when using `npm link` while using this module
+node_modules

@@ -18,7 +18,7 @@
     "test": "coffee examples/example.coffee"
   },
   "dependencies": {},
-  "main": "./lib",
+  "main": "./lib/termspeak.js",
   "engines": {
     "node": ">=0.4.x"
   },
