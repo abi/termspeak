@@ -1,6 +1,6 @@
 {
   "name": "termspeak",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utilities that enable your Node program to speak to your terminal including coloring, formatting.",
   "keywords": [
     "cli",
